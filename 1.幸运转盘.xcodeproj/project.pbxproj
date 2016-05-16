@@ -13,6 +13,9 @@
 		07F75AD81CE00405008C9774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F75AD61CE00405008C9774 /* Main.storyboard */; };
 		07F75ADA1CE00405008C9774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F75AD91CE00405008C9774 /* Assets.xcassets */; };
 		07F75ADD1CE00405008C9774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F75ADB1CE00405008C9774 /* LaunchScreen.storyboard */; };
+		07F75B091CE0396A008C9774 /* YPRotaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F75B081CE0396A008C9774 /* YPRotaryView.m */; };
+		07F75B0B1CE039EB008C9774 /* YPRotaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F75B0A1CE039EB008C9774 /* YPRotaryView.xib */; };
+		07F75B121CE0E953008C9774 /* YPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F75B111CE0E953008C9774 /* YPButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		07F75AD91CE00405008C9774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F75ADC1CE00405008C9774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07F75ADE1CE00405008C9774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F75B071CE0396A008C9774 /* YPRotaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRotaryView.h; sourceTree = "<group>"; };
+		07F75B081CE0396A008C9774 /* YPRotaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRotaryView.m; sourceTree = "<group>"; };
+		07F75B0A1CE039EB008C9774 /* YPRotaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YPRotaryView.xib; sourceTree = "<group>"; };
+		07F75B101CE0E953008C9774 /* YPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPButton.h; sourceTree = "<group>"; };
+		07F75B111CE0E953008C9774 /* YPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,10 @@
 		07F75ACC1CE00405008C9774 /* 1.幸运转盘 */ = {
 			isa = PBXGroup;
 			children = (
-				07F75AD01CE00405008C9774 /* AppDelegate.h */,
-				07F75AD11CE00405008C9774 /* AppDelegate.m */,
-				07F75AD31CE00405008C9774 /* ViewController.h */,
-				07F75AD41CE00405008C9774 /* ViewController.m */,
-				07F75AD61CE00405008C9774 /* Main.storyboard */,
+				07F75B0C1CE0B311008C9774 /* other */,
+				07F75B0F1CE0B355008C9774 /* model */,
+				07F75B0E1CE0B33F008C9774 /* view */,
+				07F75B0D1CE0B320008C9774 /* controller */,
 				07F75AD91CE00405008C9774 /* Assets.xcassets */,
 				07F75ADB1CE00405008C9774 /* LaunchScreen.storyboard */,
 				07F75ADE1CE00405008C9774 /* Info.plist */,
@@ -77,6 +84,44 @@
 				07F75ACE1CE00405008C9774 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07F75B0C1CE0B311008C9774 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				07F75AD01CE00405008C9774 /* AppDelegate.h */,
+				07F75AD11CE00405008C9774 /* AppDelegate.m */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		07F75B0D1CE0B320008C9774 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				07F75AD61CE00405008C9774 /* Main.storyboard */,
+				07F75AD31CE00405008C9774 /* ViewController.h */,
+				07F75AD41CE00405008C9774 /* ViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		07F75B0E1CE0B33F008C9774 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				07F75B071CE0396A008C9774 /* YPRotaryView.h */,
+				07F75B081CE0396A008C9774 /* YPRotaryView.m */,
+				07F75B0A1CE039EB008C9774 /* YPRotaryView.xib */,
+				07F75B101CE0E953008C9774 /* YPButton.h */,
+				07F75B111CE0E953008C9774 /* YPButton.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		07F75B0F1CE0B355008C9774 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +183,7 @@
 			files = (
 				07F75ADD1CE00405008C9774 /* LaunchScreen.storyboard in Resources */,
 				07F75ADA1CE00405008C9774 /* Assets.xcassets in Resources */,
+				07F75B0B1CE039EB008C9774 /* YPRotaryView.xib in Resources */,
 				07F75AD81CE00405008C9774 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +197,8 @@
 			files = (
 				07F75AD51CE00405008C9774 /* ViewController.m in Sources */,
 				07F75AD21CE00405008C9774 /* AppDelegate.m in Sources */,
+				07F75B121CE0E953008C9774 /* YPButton.m in Sources */,
+				07F75B091CE0396A008C9774 /* YPRotaryView.m in Sources */,
 				07F75ACF1CE00405008C9774 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +348,7 @@
 				07F75AE31CE00405008C9774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

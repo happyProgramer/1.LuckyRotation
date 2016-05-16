@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LuckyThreeButton" translatesAutoresizingMaskIntoConstraints="NO" id="5vB-qV-ZV2">
+                                <rect key="frame" x="210" y="30" width="180" height="82"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBS-i9-hYD">
+                                <rect key="frame" x="210" y="67" width="46" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="9Yd-sW-9K9"/>
+                                    <constraint firstAttribute="height" constant="47" id="R7w-6T-eAC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="双色球">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="LuckyLeftPressed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IG-a2-M4H">
+                                <rect key="frame" x="271.5" y="30" width="57" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Li9-lD-fus"/>
+                                    <constraint firstAttribute="width" constant="57" id="pcE-kw-IXb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="星座">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="LuckyMidPressed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyd-pL-Jkv">
+                                <rect key="frame" x="343" y="67" width="47" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="Mp7-gw-0jV"/>
+                                    <constraint firstAttribute="height" constant="45" id="afh-FV-eQr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="5 注">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="LuckyRightPressed"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7IG-a2-M4H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3R7-Vm-Ebc"/>
+                            <constraint firstItem="7IG-a2-M4H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="55T-bv-aqB"/>
+                            <constraint firstItem="eBS-i9-hYD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="7R0-Hf-cV9"/>
+                            <constraint firstItem="eBS-i9-hYD" firstAttribute="leading" secondItem="5vB-qV-ZV2" secondAttribute="leading" id="7eh-ml-vUg"/>
+                            <constraint firstItem="Oyd-pL-Jkv" firstAttribute="trailing" secondItem="5vB-qV-ZV2" secondAttribute="trailing" id="CZW-b9-CTs"/>
+                            <constraint firstItem="5vB-qV-ZV2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JVA-Xc-xNF"/>
+                            <constraint firstItem="5vB-qV-ZV2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xrf-Ou-Gbb"/>
+                            <constraint firstItem="Oyd-pL-Jkv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="olD-eg-vKk"/>
+                            <constraint firstItem="5vB-qV-ZV2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="yJW-Rd-g58"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="292"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LuckyLeftPressed" width="49" height="49"/>
+        <image name="LuckyMidPressed" width="67" height="67"/>
+        <image name="LuckyRightPressed" width="48" height="48"/>
+        <image name="LuckyThreeButton" width="180" height="82"/>
+    </resources>
 </document>
